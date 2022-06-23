@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+$paleBlue: hsl(225, 100%, 94%);
+$brightBlue: hsl(245, 75%, 52%);
+$n-paleBlue: hsl(225, 100%, 98%);
+$n-blue: #7280a7;
+$n-darkBlue: hsl(223, 47%, 23%);
+
+body {
+    height: 100%;
+    font-family: "Red Hat Display", sans-serif;
+    text-align: center;
+    background: url("/images/pattern-background-mobile.svg") $paleBlue no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+h2 {
+    color: $n-darkBlue;
+}
+
+p {
+    color: $n-blue;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+button {
+    all: unset;
+}
+
+.card {
+    margin: 0 1.5rem;
+    max-width: 450px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0px 12px 35px -20px $n-blue;
+    .card-body {
+        .card-heading {
+            font-size: 1.4rem;
+            margin: 1.65rem 0 0.9rem;
+            font-weight: 900;
+        }
+
+        .card-text {
+            margin: 0 2rem 1rem;
+        }
+        .card-plan-info {
+            margin: 0 1.75rem 1.5rem;
+            padding: 0.9rem;
+            background: $n-paleBlue;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+
+            .plan-left {
+                display: inherit;
+                justify-content: center;
+                img {
+                    align-self: center;
+                }
+                .plan-details {
+                    text-align: left;
+                    margin-left: 0.9rem;
+                    font-size: 0.8rem;
+                    line-height: 0.5;
+                    .plan-title {
+                        font-weight: 900;
+                        color: $n-darkBlue;
+                    }
+                }
+            }
+            .plan-right {
+                align-self: center;
+                font-weight: bold;
+                font-size: 0.8rem;
+                a:hover {
+                    text-decoration: none;
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    .card-buttons {
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+        margin: 0 1.75rem 1rem;
+
+        .payment-btn {
+            background-color: $brightBlue;
+            color: white;
+            border-radius: 10px;
+            padding: 0.95rem;
+            box-shadow: 0px 12px 25px -10px $n-blue;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+        .cancel-btn {
+            color: $n-blue;
+            padding: 1.5rem;
+            &:hover {
+                color: $n-darkBlue;
+            }
+        }
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    position: fixed;
+    bottom: 0;
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
+
+@media screen and (min-width: 450px) {
+    body {
+        background-image: url("/images/pattern-background-desktop.svg");
+    }
+    .card-body,
+    .card-buttons {
+        padding: 0 1.5rem;
+    }
+}

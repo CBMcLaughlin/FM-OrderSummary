@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+body {
+  height: 100%;
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+  background: url("/images/pattern-background-mobile.svg") #e0e8ff no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1,
+h2 {
+  color: #1f2f56;
+}
+
+p {
+  color: #7280a7;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+button {
+  all: unset;
+}
+
+.card {
+  margin: 0 1.5rem;
+  max-width: 450px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+  -webkit-box-shadow: 0px 12px 35px -20px #7280a7;
+          box-shadow: 0px 12px 35px -20px #7280a7;
+}
+
+.card .card-body .card-heading {
+  font-size: 1.4rem;
+  margin: 1.65rem 0 0.9rem;
+  font-weight: 900;
+}
+
+.card .card-body .card-text {
+  margin: 0 2rem 1rem;
+}
+
+.card .card-body .card-plan-info {
+  margin: 0 1.75rem 1.5rem;
+  padding: 0.9rem;
+  background: #f5f7ff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card .card-body .card-plan-info .plan-left {
+  display: inherit;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card .card-body .card-plan-info .plan-left img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.card .card-body .card-plan-info .plan-left .plan-details {
+  text-align: left;
+  margin-left: 0.9rem;
+  font-size: 0.8rem;
+  line-height: 0.5;
+}
+
+.card .card-body .card-plan-info .plan-left .plan-details .plan-title {
+  font-weight: 900;
+  color: #1f2f56;
+}
+
+.card .card-body .card-plan-info .plan-right {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.card .card-body .card-plan-info .plan-right a:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.card .card-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 700;
+  margin: 0 1.75rem 1rem;
+}
+
+.card .card-buttons .payment-btn {
+  background-color: #3829e0;
+  color: white;
+  border-radius: 10px;
+  padding: 0.95rem;
+  -webkit-box-shadow: 0px 12px 25px -10px #7280a7;
+          box-shadow: 0px 12px 25px -10px #7280a7;
+}
+
+.card .card-buttons .payment-btn:hover {
+  opacity: 0.8;
+}
+
+.card .card-buttons .cancel-btn {
+  color: #7280a7;
+  padding: 1.5rem;
+}
+
+.card .card-buttons .cancel-btn:hover {
+  color: #1f2f56;
+}
+
+.attribution {
+  font-size: 11px;
+  position: fixed;
+  bottom: 0;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media screen and (min-width: 450px) {
+  body {
+    background-image: url("/images/pattern-background-desktop.svg");
+  }
+  .card-body,
+  .card-buttons {
+    padding: 0 1.5rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
